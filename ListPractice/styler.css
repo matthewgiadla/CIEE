@@ -1,0 +1,16 @@
+color: pink;
+font-size: 16px;
+font-weight: 500;
+width: 100px;
+height: 100px;
+display: flex;
+flex-direction: column;
+flex-direction: row;
+gap: 2px;
+background-color: gray;
+justify-items: flex-end;
+justify-content: center;
+align-content: center;
+align-items: center;
+border-radius: 20px;
+filter: invert[100%]

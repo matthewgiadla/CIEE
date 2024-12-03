@@ -1,0 +1,152 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically align the text and image */
+    gap: 10px; /* Add space between the logo image and text */
+}
+
+.logo img {
+    max-width: 50px; /* Set the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo span {
+    font-size: 1.8em; /* Size of the "COFFEE" text */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* White color for text to match the header style */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a shadow for better contrast */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #b8976a; 
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); 
+}
+
+body {
+    padding-top: 80px; 
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-image: url('banner-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 50%; 
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000; 
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555; 
+}
+
+.shop-now-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #b8976a; /* Gold hover effect */
+}
+
+.hero-image {
+    max-width: 50%; /* Restrict image to half the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%; /* Make sure the coffee image scales properly */
+    height: auto;
+}
