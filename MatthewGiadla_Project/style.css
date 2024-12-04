@@ -40,18 +40,18 @@ body {
 .logo {
     display: flex;
     align-items: center; /* Vertically align the text and image */
-    gap: 10px; /* Add space between the logo image and text */
+    gap: 10px; 
 }
 
 .logo img {
     max-width: 50px; /* Set the maximum width of the logo */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
 .logo span {
-    font-size: 1.8em; /* Size of the "COFFEE" text */
+    font-size: 1.8em; 
     font-weight: bold; /* Make the text bold */
-    color: white; /* White color for text to match the header style */
+    color: white; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a shadow for better contrast */
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .shop-now-btn:hover {
-    background-color: #b8976a; /* Gold hover effect */
+    background-color: #b8976a; 
 }
 
 .banner-image {
