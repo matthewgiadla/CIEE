@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 body {
@@ -94,7 +94,7 @@ body {
     padding-top: 80px; 
 }
 
-.hero {
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,18 +106,18 @@ body {
     width: 100%;
 }
 
-.hero-content {
+.banner-content {
     max-width: 50%; 
 }
 
-.hero-content h1 {
+.banner-content h1 {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 20px;
     color: #000; 
 }
 
-.hero-content p {
+.banner-content p {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -139,14 +139,83 @@ body {
     background-color: #b8976a; /* Gold hover effect */
 }
 
-.hero-image {
+.banner-image {
     max-width: 50%; /* Restrict image to half the screen */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero-image img {
+.banner-image img {
     max-width: 100%; /* Make sure the coffee image scales properly */
     height: auto;
+}
+
+/* Reasonss Section Styles */
+.reasons {
+    display: flex;
+    justify-content: space-around; /* Evenly space all features horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 40px; /* Add spacing between feature items */
+    padding: 60px 20px;
+    background-color: #fff; /* White background for the section */
+    height: auto;
+}
+
+.reason {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 20px; /* Add spacing between image and text */
+    max-width: 350px; 
+    text-align: left; /* Ensure the text aligns to the left */
+}
+
+.reason img {
+    max-width: 100px; /* Restrict image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.reason p {
+    font-size: 1.4em;
+    color: #333;
+    margin: 0; /* Remove default paragraph margins */
+}
+
+/* Our Story Section Styles */
+.our-story {
+    display: block; /* Default block-level container */
+    background-color: #f9f9f9; /* Light background color */
+    overflow: hidden; /* Clear floats */
+}
+
+.image-container {
+    float: left; /* Float the image to the left */
+    width: 45%; /* Image takes up 45% of the width */
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image stretches to the full width of its container */
+    height: auto; 
+    display: block; /* Ensure layout */
+}
+
+.text-container {
+    float: left; /* Place the text to the right of the image */
+    width: 50%; 
+    margin-left: 5%; /* Add a small gap between the image and the text */
+    padding-top: 50px;
+    padding-right: 20px; /* Add some padding on the right for breathing room */
+}
+
+.text-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
 }
