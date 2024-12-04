@@ -204,7 +204,7 @@ body {
     width: 50%; 
     margin-left: 5%; /* Add a small gap between the image and the text */
     padding-top: 50px;
-    padding-right: 20px; /* Add some padding on the right for breathing room */
+    padding-right: 30px; /* Add some padding on the right for breathing room */
 }
 
 .text-container h2 {
@@ -218,4 +218,128 @@ body {
     line-height: 1.6;
     color: #555;
     margin-bottom: 20px;
+}
+
+/* Quote Section Styles */
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff; /* White background for the section */
+}
+
+.quote-content {
+    max-width: 45%; /* Restrict the text width to half of the section */
+    padding-right: 10px; /* Add spacing to separate the text from the image */
+}
+
+blockquote {
+    font-size: 2em;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 1.6;
+    color: #333;
+    position: relative;
+    margin: 0;
+}
+
+blockquote::before,
+blockquote::after {
+    content: "“";
+    font-size: 3em;
+    color: #999;
+    position: absolute;
+}
+
+blockquote::before {
+    top: -20px;
+    left: -20px;
+}
+
+blockquote::after {
+    content: "”";
+    bottom: 0px;
+    right: 0px;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #777;
+    font-weight: 300;
+}
+
+.quote-image {
+    max-width: 50%; /* Restrict the image width to half of the section */
+}
+
+.quote-image img {
+    width: 100%; /* Make the image span the full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 5px; /* Optional: Add slightly rounded corners */
+}
+
+/* Locations Section */
+.locations {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f9f8f6; /* Light beige background */
+}
+
+.location-card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the image and content fit inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    display: flex;
+    flex-direction: column;
+}
+
+.location-card img {
+    width: 100%; /* Make the image fit the card width */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image scales nicely */
+}
+
+.location-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.location-details h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.location-info {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.location-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.location-btn:hover {
+    background-color: #FFD700; /* Gold hover effect */
 }
