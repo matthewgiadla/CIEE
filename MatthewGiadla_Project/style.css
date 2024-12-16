@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Martel Sans', serif;
 }
 
 body {
@@ -230,7 +230,7 @@ body {
 }
 
 .quote-content {
-    max-width: 45%; /* Restrict the text width to half of the section */
+    max-width: 45%; 
     padding-right: 10px; /* Add spacing to separate the text from the image */
 }
 
@@ -277,8 +277,8 @@ cite {
 
 .quote-image img {
     width: 100%; /* Make the image span the full width of its container */
-    height: auto; /* Maintain the aspect ratio of the image */
-    border-radius: 5px; /* Optional: Add slightly rounded corners */
+    height: auto; 
+    border-radius: 5px; 
 }
 
 /* Locations Section */
@@ -302,9 +302,9 @@ cite {
 }
 
 .location-card img {
-    width: 100%; /* Make the image fit the card width */
-    height: 200px; /* Fixed height for consistency */
-    object-fit: cover; /* Ensures the image scales nicely */
+    width: 100%; /* Make the image fit the width */
+    height: 700px; 
+    object-fit: cover; 
 }
 
 .location-details {
@@ -341,5 +341,317 @@ cite {
 }
 
 .location-btn:hover {
-    background-color: #FFD700; /* Gold hover effect */
+    background-color: #b8976a; 
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-header {
+    margin-bottom: 30px;
+}
+
+.gallery-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gallery-header p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fit nicely */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Specific Image Placement */
+.coffee1 {
+    grid-column: 1 / 2; /* Left column */
+    grid-row: 1 / 2; /* Top row */
+}
+
+.coffee2 {
+    grid-column: 1 / 2; /* Left column */
+    grid-row: 2 / 3; /* Bottom row */
+}
+
+.coffee3 {
+    grid-column: 2 / 3; /* Center column */
+    grid-row: 1 / 3; /* Spans two rows */
+}
+
+.coffee4 {
+    grid-column: 3 / 4; /* Right column */
+    grid-row: 1 / 2; /* Top row */
+}
+
+.coffee5 {
+    grid-column: 3 / 4; /* Right column */
+    grid-row: 2 / 3; /* Bottom row */
+}
+
+/* Best Sellers Section */
+.best-sellers {
+    padding: 50px 20px;
+    background-color: #f3f1eb;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    gap: 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Menu Item */
+.menu-item {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between details and price */
+    align-items: center; /* Align items vertically */
+    border-bottom: 1px solid #ddd; /* Line between items */
+    padding: 15px 0;
+    position: relative;
+}
+
+.item-details h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.item-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* New Badge */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 80px;
+    background-color: #c8a878; /* Gold color for badge */
+    color: white;
+    font-size: 0.8em;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* Read More Button */
+.read-more-container {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 20px;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #b8976a;
+}
+
+/* Footer General Styles */
+.footer {
+    background-color: #f9f8f6; /* Light beige background */
+    color: #000;
+    font-size: 0.9em;
+    padding: 30px 20px;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between left and right */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%; /* Take up full width */
+    padding: 30px 20px 30px 20px; /* Keep minimal padding (left & right) */
+    box-sizing: border-box; /* Padding included in width */
+}
+
+/* Left Section: Logo, Links, and Visit Us */
+.footer-left {
+    display: flex;
+    flex: 3; /* Left section takes up 3x space */
+    gap: 40px; /* Space between the items */
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-logo img {
+    max-width: 120px; /* Logo size */
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-logo p {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-links li a:hover {
+    color: #000;
+}
+
+.visit-us h4 {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.visit-us p {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Right Section: Stay Up to Date */
+.footer-right {
+    flex: 1; /* Take less space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left inside its box */
+    gap: 10px; /* Space between form elements */
+    box-sizing: border-box; /* Include padding in flex width */
+}
+
+.footer-right form {
+    display: flex;
+    width: 100%;
+}
+
+.footer-right input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.footer-right button {
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-right button:hover {
+    background-color: #b8976a; /* Gold hover effect */
+}
+
+.footer-right label {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.footer-right .privacy-policy {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-right .privacy-policy:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right {
+        align-items: center;
+    }
 }

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Cube</title>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -87,6 +91,98 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h2>Our Gallery</h2>
+            <p>Here is a gallery of our most prized beverages we have to offer. Whatever you want to drink we have it.</p>
+        </div>
+        <div class="gallery-grid">
+            <!-- Left Side: Coffee 1 and Coffee 2 -->
+            <div class="gallery-item coffee1">
+                <img src="coffee1.jpg" alt="Coffee 1">
+            </div>
+            <div class="gallery-item coffee2">
+                <img src="coffee2.jpg" alt="Coffee 2">
+            </div>
+
+            <!-- Center: Coffee 3 -->
+            <div class="gallery-item coffee3">
+                <img src="coffee3.jpg" alt="Coffee 3">
+            </div>
+
+            <!-- Right Side: Coffee 4 and Coffee 5 -->
+            <div class="gallery-item coffee4">
+                <img src="coffee4.jpg" alt="Coffee 4">
+            </div>
+            <div class="gallery-item coffee5">
+                <img src="coffee5.jpg" alt="Coffee 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers">
+        <div class="container">
+            <h2 class="section-title">BEST NEW FLAVOURS</h2>
+
+            <!-- Menu Items -->
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>CAFFE LATTE</h3>
+                    <p>Fresh brewed coffee and steamed milk</p>
+                </div>
+                <div class="item-price">$2.95</div>
+            </div>
+
+            <div class="menu-item new-item">
+                <div class="item-details">
+                    <h3>CAFFE MOCHA</h3>
+                    <p>Espresso with Milk, and Whipped Cream</p>
+                </div>
+                <div class="item-price">$3.67</div>
+                <div class="badge">NEW</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>WHITE CHOCOLATE MOCHA</h3>
+                    <p>Espresso, White Chocolate, Milk, Ice, and Cream</p>
+                </div>
+                <div class="item-price">$2.79</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>CAFFE AMERICANO</h3>
+                    <p>Espresso Shots and Light Layer of Cream</p>
+                </div>
+                <div class="item-price">$3.06</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>CAPPUCCINO</h3>
+                    <p>Espresso, and Smoothed Layer of Foam</p>
+                </div>
+                <div class="item-price">$4.03</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>VANILLA LATTE</h3>
+                    <p>Espresso Mix with Flavor and Cream</p>
+                </div>
+                <div class="item-price">$3.65</div>
+            </div>
+
+            <!-- Read More Button -->
+            <div class="read-more-container">
+                <button class="read-more-btn">READ MORE</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Locations Section -->
     <section class="locations">
         <div class="location-card">
@@ -94,7 +190,7 @@
             <div class="location-details">
                 <h2>COFFEE CUBE BLACK</h2>
                 <div class="location-info">
-                    <p><strong>Hours:</strong><br>Mon to Fri: 6am - 6pm<br>Sat & Sun: 6am - 9pm</p>
+                    <p><strong>Hours:</strong><br>Mon to Fri: 8:30 - 19:00<br>Sat & Sun: 10:00 - 18:00</p>
                     <p><strong>Address:</strong><br>Jungmannovo nám. 6/767, 110 00 Můstek</p>
                 </div>
                 <button class="location-btn">GET DIRECTIONS</button>
@@ -105,7 +201,7 @@
             <div class="location-details">
                 <h2>COFFEE CUBE ORIGINAL</h2>
                 <div class="location-info">
-                    <p><strong>Hours:</strong><br>Mon to Fri: 6am - 6pm<br>Sat & Sun: 6am - 9pm</p>
+                    <p><strong>Hours:</strong><br>Mon to Fri: 8:00 - 19:00<br>Sat & Sun: 10:00 - 19:00</p>
                     <p><strong>Address:</strong><br>Jakubská, 110 00 Staré Město</p>
                 </div>
                 <button class="location-btn">GET DIRECTIONS</button>
@@ -113,5 +209,51 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Section: Logo, Links, and Visit Us -->
+            <div class="footer-left">
+                <!-- Logo Area -->
+                <div class="footer-logo">
+                    <img src="coffee-cube-logo.png" alt="Coffee Cube Logo">
+                    <div class="social-icons">
+                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    </div>
+                    <p>&copy; 2024 Coffee Cube</p>
+                </div>
+                
+                <!-- Links -->
+                <ul class="footer-links">
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+
+                <!-- Visit Us -->
+                <div class="visit-us">
+                    <h4>VISIT US</h4>
+                    <p><strong>CC Black</strong><br>Jungmannovo nám. 6/767, 110 00 Můstek</p>
+                    <p><strong>CC Original</strong><br>Jakubská, 110 00 Staré Město</p>
+                </div>
+            </div>
+
+            <!-- Right Section: Stay Up to Date -->
+            <div class="footer-right">
+                <p>Stay up to date with Coffee Cube</p>
+                <form>
+                    <input type="email" placeholder="Your email here" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <label>
+                    <input type="checkbox" required>
+                    By checking this box, you agree you are at least 16 years of age.
+                </label>
+                <a href="#" class="privacy-policy">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
