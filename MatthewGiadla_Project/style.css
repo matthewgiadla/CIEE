@@ -14,17 +14,15 @@ body {
 
 /* Header Styles */
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -90,9 +88,29 @@ body {
     filter: invert(1); 
 }
 
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 0.9em; /* Smaller font size for mobile */
+    }
+}
+
 body {
     padding-top: 80px; 
 }
+
+
 
 .banner {
     display: flex;
@@ -126,17 +144,17 @@ body {
 
 .shop-now-btn {
     display: flex; /* Use flexbox */
-    justify-content: center; /* Center the text inside the button */
+    justify-content: center; 
     align-items: center; /* Vertically center the text */
-    width: fit-content; /* Adjust button width to fit content */
+    width: fit-content; 
     padding: 10px 20px; /* Add spacing around the text */
-    font-size: 1em; /* Adjust font size if necessary */
+    font-size: 1em; 
     background-color: black; /* Keep button background color */
     color: white;
     border: none;
     border-radius: 5px; /* Slightly rounded corners */
     cursor: pointer; /* Change cursor to pointer */
-    text-align: center; /* Align text center */
+    text-align: center; 
     transition: background-color 0.3s ease;
 }
 
@@ -156,20 +174,41 @@ body {
     height: auto;
 }
 
-/* Reasonss Section Styles */
+/* Responsive Banner for Mobile */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner-content {
+        padding: 0;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8em; /* Smaller text size */
+    }
+
+    .banner-image img {
+        max-width: 300px; /* Smaller image size */
+    }
+}
+
+/* Reasons Section Styles */
 .reasons {
     display: flex;
-    justify-content: space-around; /* Evenly space all features horizontally */
+    justify-content: space-around; 
     align-items: center; /* Align items vertically */
     gap: 40px; /* Add spacing between feature items */
     padding: 60px 20px;
-    background-color: #fff; /* White background for the section */
+    background-color: #fff; 
     height: auto;
 }
 
 .reason {
     display: flex;
-    align-items: center; /* Align image and text vertically */
+    align-items: center; 
     gap: 20px; /* Add spacing between image and text */
     max-width: 350px; 
     text-align: left; /* Ensure the text aligns to the left */
@@ -177,7 +216,7 @@ body {
 
 .reason img {
     max-width: 100px; /* Restrict image size */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
 .reason p {
@@ -186,7 +225,27 @@ body {
     margin: 0; /* Remove default paragraph margins */
 }
 
-/* Our Story Section Styles */
+/* Responsive Banner for Mobile */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner-content {
+        padding: 0;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8em; /* Smaller text size */
+    }
+
+    .banner-image img {
+        max-width: 300px; /* Smaller image size */
+    }
+}
+
 /* Our Story Section */
 .our-story {
     display: flex;
@@ -206,7 +265,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px; /* Smooth rounded corners */
-    object-fit: cover; /* Maintain image proportions */
+    object-fit: cover; 
 }
 
 .story-text {
@@ -244,9 +303,9 @@ body {
 /*Quote section*/
 .quote {
     display: flex; /* Flex container for the quote section */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Space out text and image */
-    gap: 40px; /* Space between text and image */
+    align-items: center; /* Vertically */
+    justify-content: space-between; 
+    gap: 40px; 
     padding: 50px;
     background-color: #fff;
 }
@@ -255,8 +314,8 @@ body {
     display: flex; /* Flexbox for inner content */
     flex-direction: column; /* Stack text vertically */
     justify-content: center;
-    position: relative; /* For positioning quotation marks */
-    flex: 1; /* Equal space for text */
+    position: relative; 
+    flex: 1; 
     max-width: 50%; /* Limit text width */
 }
 
@@ -266,7 +325,7 @@ body {
     line-height: 1.4;
     color: #333;
     margin: 0;
-    position: relative; /* Allow positioning for pseudo-elements */
+    position: relative; 
     padding: 20px;
 }
 
@@ -292,8 +351,8 @@ body {
 
 .quote-content cite {
     display: flex; /* Flexbox for the citation */
-    justify-content: flex-start; /* Align to the left */
-    font-size: 1em; /* Smaller font size */
+    justify-content: flex-start; 
+    font-size: 1em; 
     font-style: italic; /* Italicized text */
     color: #777;
     margin-top: 10px;
@@ -309,14 +368,14 @@ body {
 .quote-image img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Maintain proportions */
+    object-fit: cover; 
     border-radius: 5px; /* Add rounded corners */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .quote {
-        flex-direction: column; /* Stack text and image vertically */
+        flex-direction: column;
         text-align: center; /* Center-align text */
     }
 
@@ -338,11 +397,11 @@ body {
 
 /* Locations Section */
 .locations {
-    display: flex; /* Ensure flex layout */
+    display: flex; 
     justify-content: space-between;
     gap: 20px;
     padding: 50px;
-    background-color: #f9f8f6; /* Light beige background */
+    background-color: #f9f8f6; 
 }
 
 .location-card {
@@ -351,21 +410,21 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
-    overflow: hidden; /* Keeps everything inside the card bounds */
+    overflow: hidden; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1; /* Cards take equal space */
 }
 
 .location-card img {
     width: 100%; /* Image takes full width */
-    height: 300px; /* Adjust the height as needed */
-    object-fit: cover; /* Ensures no distortion */
-    flex-shrink: 0; /* Prevents the image from shrinking */
+    height: 300px; 
+    object-fit: cover; 
+    flex-shrink: 0; 
 }
 
 .location-details {
     display: flex;
-    flex: 1; /* Ensures content stretches to fill remaining space */
+    flex: 1; 
     flex-direction: column;
     justify-content: space-between; /* Distribute content evenly */
     padding: 20px;
@@ -426,8 +485,8 @@ body {
 /* Gallery Grid */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
     gap: 15px;
     max-width: 1200px;
     margin: 0 auto;
@@ -486,7 +545,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
+    flex-direction: column; 
     gap: 20px;
 }
 
@@ -526,18 +585,6 @@ body {
     color: #333;
 }
 
-/* New Badge */
-.badge {
-    position: absolute;
-    top: 15px;
-    right: 80px;
-    background-color: #c8a878; /* Gold color for badge */
-    color: white;
-    font-size: 0.8em;
-    padding: 3px 8px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
 
 /* Read More Button */
 .read-more-container {
@@ -574,14 +621,14 @@ body {
 
 .footer-container {
     display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space between left and right */
+    justify-content: space-between; 
     align-items: flex-start; /* Align items to the top */
-    width: 100%; /* Take up full width */
+    width: 100%; 
     padding: 30px 20px 30px 20px; /* Keep minimal padding (left & right) */
-    box-sizing: border-box; /* Padding included in width */
+    box-sizing: border-box; 
 }
 
-/* Left Section: Logo, Links, and Visit Us */
+/* Left Section */
 .footer-left {
     display: flex;
     flex: 3; /* Left section takes up 3x space */
@@ -643,7 +690,7 @@ body {
     color: #555;
 }
 
-/* Right Section: Stay Up to Date */
+/* Right Section */
 .footer-right {
     flex: 1; /* Take less space */
     display: flex;
@@ -676,7 +723,7 @@ body {
 }
 
 .footer-right button:hover {
-    background-color: #b8976a; /* Gold hover effect */
+    background-color: #b8976a; 
 }
 
 .footer-right label {
