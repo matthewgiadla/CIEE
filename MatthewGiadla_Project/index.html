@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Cube</title>
+
+    <!-- Description for SEO-->
+    <meta name="description" content="Discover our gallery of the most prized coffee beverages we have to offer. From rich espressos to creamy lattes, explore our delightful coffee collection.">
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="Coffee, Latte, Cappuccino, Espresso, Coffee Shop, Best Beverages, Coffee Gallery, Prague, Prague Coffee">
+
+    <!-- My authot metadata information -->
+    <meta name="author" content="Matthew Giadla">
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -19,113 +29,115 @@
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <img src="coffee-cube-logo.png">
+                <img src="/assets/header/coffee-cube-logo.png">
                 <span>COFFEE CUBE</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">COFFEE</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">LOGIN</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#coffee">COFFEE</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#locations">LOCATIONS</a></li>
             </ul>
-            <button class="search-btn">
-                <img src="search-interface-symbol.png" alt="Search Icon">
-            </button>
+            <section class="search-btn">
+                <img src="/assets/header/magnifying-glass.svg" alt="Search Icon">
+            </section>
         </nav>
     </header>
 
-    <section class="banner">
+    <!--Banner section-->
+    <section id="home" class="banner">
         <div class="banner-content">
-            <h1>A ROASTED COFFEE FOR YOU</h1>
+            <h1>A QUALITY COFFEE FOR YOU</h1>
             <p>
-                The coffee is brewed by first roasting the green coffee beans over 
-                hot coals in a brazier, giving an opportunity to sample.
+                The coffee is crafted to perfection by the best baristas in Prague. 
+                When you have coffee with us you step into a cozy environment with like-minded people
             </p>
-            <button class="shop-now-btn">SHOP NOW</button>
+            <section class="shop-now-btn">SHOP NOW</section>
         </div>
-        <div class="banner-image">
-            <img src="coffee-design.png" alt="Coffee Cup">
-        </div>
+        <section class="banner-image">
+            <img src="/assets/banner/coffee-design.png" alt="Coffee Cup">
+        </section>
     </section>
 
+    <!--Reasons section-->
     <section class="reasons">
-        <div class="reason">
-            <img src="coffee-bean.svg" alt="Coffee Beans">
+        <section class="reason">
+            <img src="/assets/reasons/coffee-bean.svg" alt="Coffee Beans">
             <p>We provide the highest quality coffee to our customers</p>
-        </div>
-        <div class="reason">
-            <img src="device-mobile.svg" alt="Order Online">
+        </section>
+        <section class="reason">
+            <img src="/assets/reasons/device-mobile.svg" alt="Order Online">
             <p>Order online and pick up whenever you please</p>
-        </div>
-        <div class="reason">
-            <img src="tree-evergreen.svg" alt="Environment">
+        </section>
+        <section class="reason">
+            <img src="/assets/reasons/tree-evergreen.svg" alt="Environment">
             <p>Come to our shop and enjoy the ambiant environment</p>
-        </div>
+        </section>
     </section>
 
-    <section class="our-story">
-        <div class="image-container">
-            <img src="latte-photo.png" alt="Coffee Cup">
+    <!--Our Story section-->
+    <section id="about" class="our-story">
+        <div class="story-image">
+            <img src="/assets/our_story/latte-photo.png" alt="Coffee Cup on a Table">
         </div>
-        <div class="text-container">
-            <h2>The knowledge behind how to process coffee</h2>
+        <div class="story-text">
+            <h2>Our Story</h2>
             <p>
-                A coffee bean is actually a seed. When dried, roasted, and ground, it's used to brew coffee. If the seed isn't processed, it can be planted and grow into a coffee tree.
-            </p>
-            <p>
-                Coffee seeds are generally planted in large beds in shaded nurseries. The seedlings will be watered frequently and shaded from bright sunlight until they are hardy enough to be permanently planted. Planting often takes place during the wet season, so that the soil remains moist while the roots become firmly established.
+                At Coffee Cube, we believe every cup should be crafted to fuel your journey, wherever it may lead. Our close-knit 
+                team of baristas is dedicated to sharing our love of coffee with Prague. Our beans are sourced with care and roasted to perfection, bringing the world's best flavors to your daily routine. 
+                From first sip to last, Coffee Cube is here to elevate your coffee experience, one cup at a time.
             </p>
         </div>
     </section>
 
     <!-- Quote Section -->
     <section class="quote">
+        <!-- Quote Text -->
         <div class="quote-content">
             <blockquote>
-                <p>
-                    Our work does make sense only if it is a faithful witness of his time.
-                </p>
-                <cite>Jean-Philippe Nuel, Director</cite>
+                A cup of gourmet coffeeshared with a friend is happiness tasted and time well spent.
             </blockquote>
+            <cite>David Lynch</cite>
         </div>
+    
+        <!-- Quote Image -->
         <div class="quote-image">
-            <img src="quote.png" alt="Barista at work">
+            <img src="/assets/quote/quote.png" alt="Person working on a wall">
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery-section">
+    <section id="coffee" class="gallery-section">
         <div class="gallery-header">
             <h2>Our Gallery</h2>
-            <p>Here is a gallery of our most prized beverages we have to offer. Whatever you want to drink we have it.</p>
+            <p>Here is a gallery of our most popular beverages we have to offer. Whatever you want to drink we have it.</p>
         </div>
         <div class="gallery-grid">
-            <!-- Left Side: Coffee 1 and Coffee 2 -->
-            <div class="gallery-item coffee1">
-                <img src="coffee1.jpg" alt="Coffee 1">
-            </div>
-            <div class="gallery-item coffee2">
-                <img src="coffee2.jpg" alt="Coffee 2">
-            </div>
+            <section class="gallery-item coffee1">
+                <img src="/assets/gallery/coffee1.jpg" alt="Coffee 1">
+            </section>
+            <section class="gallery-item coffee2">
+                <img src="/assets/gallery/coffee2.jpg" alt="Coffee 2">
+            </section>
 
-            <!-- Center: Coffee 3 -->
-            <div class="gallery-item coffee3">
-                <img src="coffee3.jpg" alt="Coffee 3">
-            </div>
+            <!-- Center -->
+            <section class="gallery-item coffee3">
+                <img src="/assets/gallery/coffee3.jpg" alt="Coffee 3">
+            </section>
 
-            <!-- Right Side: Coffee 4 and Coffee 5 -->
-            <div class="gallery-item coffee4">
-                <img src="coffee4.jpg" alt="Coffee 4">
-            </div>
-            <div class="gallery-item coffee5">
-                <img src="coffee5.jpg" alt="Coffee 5">
-            </div>
+            <!-- Right Side -->
+            <section class="gallery-item coffee4">
+                <img src="/assets/gallery/coffee4.jpg" alt="Coffee 4">
+            </section>
+            <section class="gallery-item coffee5">
+                <img src="/assets/gallery/coffee5.jpg" alt="Coffee 5">
+            </section>
         </div>
     </section>
 
     <!-- Best Sellers Section -->
-    <section class="best-sellers">
+    <section id="shop" class="best-sellers">
         <div class="container">
             <h2 class="section-title">BEST NEW FLAVOURS</h2>
 
@@ -135,7 +147,7 @@
                     <h3>CAFFE LATTE</h3>
                     <p>Fresh brewed coffee and steamed milk</p>
                 </div>
-                <div class="item-price">$2.95</div>
+                <div class="item-price">85 Crowns</div>
             </div>
 
             <div class="menu-item new-item">
@@ -143,16 +155,15 @@
                     <h3>CAFFE MOCHA</h3>
                     <p>Espresso with Milk, and Whipped Cream</p>
                 </div>
-                <div class="item-price">$3.67</div>
-                <div class="badge">NEW</div>
+                <div class="item-price">105 Crowns</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-details">
-                    <h3>WHITE CHOCOLATE MOCHA</h3>
-                    <p>Espresso, White Chocolate, Milk, Ice, and Cream</p>
+                    <h3>CAFFEE MACHIATO</h3>
+                    <p>Espresso and Foam</p>
                 </div>
-                <div class="item-price">$2.79</div>
+                <div class="item-price">70 Crowns</div>
             </div>
 
             <div class="menu-item">
@@ -160,7 +171,7 @@
                     <h3>CAFFE AMERICANO</h3>
                     <p>Espresso Shots and Light Layer of Cream</p>
                 </div>
-                <div class="item-price">$3.06</div>
+                <div class="item-price">80 Crowns</div>
             </div>
 
             <div class="menu-item">
@@ -168,71 +179,80 @@
                     <h3>CAPPUCCINO</h3>
                     <p>Espresso, and Smoothed Layer of Foam</p>
                 </div>
-                <div class="item-price">$4.03</div>
+                <div class="item-price">80 Crowns</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-details">
-                    <h3>VANILLA LATTE</h3>
-                    <p>Espresso Mix with Flavor and Cream</p>
+                    <h3>FLAT WHITE</h3>
+                    <p>Espresso Mix with Foam and Cream</p>
                 </div>
-                <div class="item-price">$3.65</div>
+                <div class="item-price">85 Crowns</div>
             </div>
 
             <!-- Read More Button -->
             <div class="read-more-container">
-                <button class="read-more-btn">READ MORE</button>
+                <div class="read-more-btn">READ MORE</div>
             </div>
         </div>
     </section>
 
     <!-- Locations Section -->
-    <section class="locations">
-        <div class="location-card">
-            <img src="coffee-cube-black.png" alt="Coffee Cube Black">
+    <section id="locations" class="locations">
+        <section class="location-card">
+            <img src="/assets/locations/coffee-cube-black.png" alt="Coffee Cube Black">
             <div class="location-details">
                 <h2>COFFEE CUBE BLACK</h2>
                 <div class="location-info">
                     <p><strong>Hours:</strong><br>Mon to Fri: 8:30 - 19:00<br>Sat & Sun: 10:00 - 18:00</p>
                     <p><strong>Address:</strong><br>Jungmannovo nám. 6/767, 110 00 Můstek</p>
                 </div>
-                <button class="location-btn">GET DIRECTIONS</button>
+                <!--Link to directions to Coffee Cube Black on google maps-->
+                <a href="https://www.google.com/maps/place/Coffee+Cube+Black/@50.0834306,14.4203441,17z/data=!3m1!4b1!4m6!3m5!1s0x470b957ed5b80297:0xa2d33c63bedd8f29!8m2!3d50.0834306!4d14.4229244!16s%2Fg%2F11hdvvdcz5?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+               target="_blank" rel="noopener">
+                <div class="location-btn">GET DIRECTIONS</div>
+                </a>
             </div>
-        </div>
-        <div class="location-card">
-            <img src="coffee-cube-original.png" alt="Coffee Cube Original">
+        </section>
+        <section class="location-card">
+            <img src="/assets/locations/coffee-cube-original.png" alt="Coffee Cube Original">
             <div class="location-details">
                 <h2>COFFEE CUBE ORIGINAL</h2>
                 <div class="location-info">
                     <p><strong>Hours:</strong><br>Mon to Fri: 8:00 - 19:00<br>Sat & Sun: 10:00 - 19:00</p>
                     <p><strong>Address:</strong><br>Jakubská, 110 00 Staré Město</p>
                 </div>
-                <button class="location-btn">GET DIRECTIONS</button>
+                <!--Link to direction to Coffee Cube Original on google maps -->
+                <a href="https://www.google.com/maps/place/Coffee+Cube/@50.0885617,14.423994,17z/data=!3m1!4b1!4m6!3m5!1s0x470b94ea513b6b67:0x809de6f95bacdbb0!8m2!3d50.0885617!4d14.4265743!16s%2Fg%2F11b77d69q5?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" rel="noopener">
+                    <div class="location-btn">GET DIRECTIONS</div>
+                </a>
             </div>
-        </div>
+        </section>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
-            <!-- Left Section: Logo, Links, and Visit Us -->
+            <!-- Left Section -->
             <div class="footer-left">
                 <!-- Logo Area -->
-                <div class="footer-logo">
-                    <img src="coffee-cube-logo.png" alt="Coffee Cube Logo">
-                    <div class="social-icons">
-                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
-                    </div>
+                <section class="footer-logo">
+                    <img src="/assets/header/coffee-cube-logo.png" alt="Coffee Cube Logo">
+                    <section class="social-icons">
+                        <a href="https://www.instagram.com/coffeecubeofficial/" target="_blank" rel="noopener">
+                            <img src="/assets/footer/instagram-logo.svg" alt="Instagram">
+                        </a>
+                    </section>
                     <p>&copy; 2024 Coffee Cube</p>
-                </div>
+                </section>
                 
                 <!-- Links -->
                 <ul class="footer-links">
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">MENU</a></li>
-                    <li><a href="#">OUR STORY</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">AOUT</a></li>
+                    <li><a href="#">LOCATIONS</a></li>
                 </ul>
 
                 <!-- Visit Us -->
@@ -243,7 +263,7 @@
                 </div>
             </div>
 
-            <!-- Right Section: Stay Up to Date -->
+            <!-- Right Section -->
             <div class="footer-right">
                 <p>Stay up to date with Coffee Cube</p>
                 <form>
